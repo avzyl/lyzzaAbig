@@ -1,0 +1,527 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #0000;
+  overflow-x: hidden;
+  position: relative;
+}
+
+:root{
+  --red: #763e5b;
+  --beige: #f8f9f0;
+}
+
+.win7-btn {
+  margin-right: 10px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  padding: 3px 15px 3px 15px;
+  background: #f2f2f2;
+  background: -moz-linear-gradient(top, #f2f2f2 0%, #ebebeb 42%, #dddddd 47%, #cfcfcf 100%);
+  background: -webkit-linear-gradient(top, #f2f2f2 0%, #ebebeb 42%, #dddddd 47%, #cfcfcf 100%);
+  background: linear-gradient(to bottom, #f2f2f2 0%, #ebebeb 42%, #dddddd 47%, #cfcfcf 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#cfcfcf', GradientType=0);
+  transition: all 0.1s ease-in;
+  border: 1px solid #707070;
+  text-decoration: none;
+  color: #555;
+}
+
+.win7-btn:hover,
+.win7-btn:focus {
+  outline: 0;
+  background: #eaf6fd;
+  background: -moz-linear-gradient(top, #eaf6fd 0%, #d9f0fc 42%, #bee6fd 47%, #bce5fc 58%, #a7d9f5 100%);
+  background: -webkit-linear-gradient(top, #eaf6fd 0%, #d9f0fc 42%, #bee6fd 47%, #bce5fc 58%, #a7d9f5 100%);
+  background: linear-gradient(to bottom, #eaf6fd 0%, #d9f0fc 42%, #bee6fd 47%, #bce5fc 58%, #a7d9f5 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eaf6fd', endColorstr='#a7d9f5', GradientType=0);
+  border: 1px solid #3C7FB1;
+  box-shadow: 0 0 3px #A7D9F5;
+  -o-box-shadow: 0 0 3px #A7D9F5;
+  -webkit-box-shadow: 0 0 3px #A7D9F5;
+  -moz-box-shadow: 0 0 3px #A7D9F5;
+}
+
+.win7-btn:active {
+  box-shadow: inset 0 -1px 6px rgba(0, 0, 0, 0.2), inset 0 -0.7em #BEE6FD, 0 0 3px #A7D9F5;
+  -o-box-shadow: inset 0 -1px 6px rgba(0, 0, 0, 0.2), inset 0 -0.7em #BEE6FD, 0 0 3px #A7D9F5;
+  -webkit-box-shadow: inset 0 -1px 6px rgba(0, 0, 0, 0.2), inset 0 -0.7em #BEE6FD, 0 0 3px #A7D9F5;
+  -moz-box-shadow: inset 0 -1px 6px rgba(0, 0, 0, 0.2), inset 0 -0.7em #BEE6FD, 0 0 3px #A7D9F5;
+}
+
+/* navbar */
+.navbar-blur {
+  background-color: rgba(255, 255, 255, 0.3); /* semi-transparent */
+  backdrop-filter: blur(10px);               /* blur effect */
+  -webkit-backdrop-filter: blur(10px);       /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* optional border */
+}
+
+.nav-link {
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-size: 1rem;
+  color: var(--beige);
+  font-weight: bold;
+}
+
+.nav-link:hover{
+  font-weight: bolder;
+  color: var(--red);
+  border-bottom: 3px solid var(--red);
+}
+
+.nav-link.active {
+  color: var(--red);
+  font-weight: bolder;
+}
+
+/*======================== home ========================*/
+.section1{
+  min-height: 20vh;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center; /* centers the images horizontally */
+  align-items: center;     /* centers them vertically if needed */
+  gap: 2vw;               /* space between images */
+  height: 90vh;           /* optional: center vertically in viewport */
+}
+
+.img-wrapper img{
+  height: 300px;
+}
+
+.flowers{
+  display: flex;
+  justify-content: center; /* centers the images horizontally */
+  align-items: center;     /* centers them vertically if needed */
+  gap: 2vw;               /* space between images */
+  height: 20vh;  
+}
+
+.hibiscus1 {
+  height: 90vh;
+  position: absolute;
+  left: 0;
+  margin-left: -400px;
+}
+
+.hibiscus2 {
+  height: 80vh;
+  position: absolute;
+  right: 0;
+  margin-top: -10%;
+  margin-right: -400px;
+}
+
+.wave1 {
+  max-width: 100%;
+  margin-top: -10%;
+}
+
+/*======================== about ========================*/
+.section2{
+  min-height: 100vh;
+  background-color: var(--red);
+}
+
+.about {
+  margin: 0;
+}
+
+.about-wrapper {
+  padding-left: 8vw;
+  padding-top: 14vh;
+  display: inline-block;
+}
+
+.about-wrapper img{
+  height: 210px;
+}
+
+.me{
+  display: flex;
+  justify-content: center; /* centers the images horizontally */
+  align-items: center;  
+}
+
+.lyzzasPic img{
+  margin-top: -13%;
+  height: 900px;
+}
+
+.aboutTxt {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.aboutTxt p {
+  padding: 5px;
+  color: var(--beige);
+  font-size: 1.5rem;
+}
+
+p.indent {
+  text-indent: 30px;
+}
+
+p.indent1 {
+  text-indent: 30px;
+}
+
+.wave2 {
+  max-width: 100%;
+  margin-top: -2%;
+}
+
+/*======================== education ========================*/
+.section3 {
+  min-height: 130vh;
+  background-color: var(--beige);
+}
+
+.rose {
+  height: 100vh;
+  position: absolute;
+  margin-top: -35rem;
+  right: 0;
+  margin-right: -210px;
+}
+
+.educ {
+  margin-top: -25rem;
+}
+
+.education-wrapper {
+  display: flex;
+  margin-left: 10rem;
+}
+
+.education-wrapper img{
+  height: 200px;
+}
+
+.educTxt {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 10rem;
+  margin-top: 8rem;
+}
+
+.educTxt p {
+  color: var(--red);
+  font-size: 1.5rem;
+}
+
+.school {
+  border-top: solid 0.3rem var(--red);
+  padding: 2rem;
+}
+
+.schoolLast {
+  border-top: solid 0.3rem var(--red);
+  border-bottom: solid 0.3rem var(--red);
+  padding: 2rem;
+}
+
+.cv-con {
+  padding-right: 20rem;
+  padding-top: 5rem;
+}
+
+.cv-wrapper {
+  float: right;
+  height: 250px;
+  transition: transform 0.3s ease;
+}
+
+.cv-wrapper:hover {
+  transform: scale(1.05);
+}
+
+
+/*======================== portfolio ========================*/
+.section4 {
+  min-height: 200vh;
+  background-color: var(--red);
+}
+
+.wave3 {
+  max-width: 100%;
+  margin-top: -15rem;
+}
+
+.hibiscus3 {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  margin-left: -16rem;
+  margin-top: -50rem;
+}
+
+.port-wrapper {
+  display: flex;
+  margin-left: 45rem;
+  margin-top: -20rem;
+}
+
+.port-wrapper img{
+  height: 250px;
+}
+
+.carousel {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.carousel-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  transform: rotate(4deg); /* ⬅️ This tilts the whole grid */
+  transform-origin: center;
+  min-width:110vw; 
+}
+
+
+.carousel-container img {
+  width: 100%;
+  height: auto;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+#popup-img {
+  max-width: 100%;
+  max-height: 60vh;
+}
+
+#popup-title {
+  color: white;
+  font-size: 1.2rem;
+}
+
+#popup-close {
+  position: absolute;
+  top: 5rem;
+  right: 30px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.popup-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#popup-title {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.btn-primary {
+  white-space: nowrap;
+}
+
+.rose1 {
+  height: 80vh;
+  position: absolute;
+  left: 0;
+  margin-top: 10rem;
+  margin-left: -350px;
+}
+
+.tulips {
+  height: 120vh;
+  position: absolute;
+  right: 0;
+  margin-right: -600px;
+  margin-top: 28rem;
+}
+
+.seeMore-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.seeMore-wrapper img{
+  height: 85px;
+}
+
+.seeMore-link .seeMore-img {
+  transition: transform 0.3s ease;
+  height: 85px;
+}
+
+.seeMore-link:hover .seeMore-img {
+  transform: scale(1.05);
+}
+
+/*======================== contact ========================*/
+.section5 {
+  min-height: 90vh;
+  background-color: var(--beige);
+}
+
+.wave4 {
+  max-width: 100%;
+  margin-top: -16rem;
+}
+
+.con-wrapper img{
+  height: 200px;
+}
+
+.con-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15rem;
+  margin-left: 10rem;
+}
+
+.con-wrapper {
+  flex: 0 1 38%;
+}
+
+/* Force tgt to take full width and center it */
+.con-wrapper:nth-child(3) {
+  flex: 0 1 100%;
+}
+
+.wave5 {
+  max-width: 100%;
+  margin-top: -16rem;
+}
+
+.deets-con {
+  display: flex;
+  justify-content: center; /* centers all items horizontally */
+  gap: 1rem;               /* optional space between images */
+  margin-top: 10rem;
+}
+
+.con-deets img,
+.email {
+  height: 8rem;
+  transition: transform 0.3s ease;
+}
+
+.email:hover {
+  transform: scale(1.1);
+}
+
+.ft-wrapper {
+  margin-top: -8rem;
+}
+
+.ft{
+  text-transform: uppercase;
+  color: var(--beige);
+  padding-top: 0.3rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.ft i{
+  font-size: 250%;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-bottom: 1rem;
+  color: var(--beige);
+}
+
+.ft i:hover{
+  color: #301623;
+}
+
+
+/*======================== media ========================*/
+@media screen and (min-width: 768px) {
+  .btns {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel{
+    max-width: 90vw;
+  }
+  .carousel-container {
+    padding-top: 350px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: rotate(0deg); 
+  }
+
+  .carousel-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotate(var(--angle));
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+
+  .carousel-container img:nth-child(2) { z-index: 2; }
+  .carousel-container img:nth-child(3) { z-index: 3; }
+  .carousel-container img:nth-child(4) { z-index: 4; }
+  .carousel-container img:nth-child(5) { z-index: 5; }
+  .carousel-container img:nth-child(6) { z-index: 6; }
+  .carousel-container img:nth-child(7) { z-index: 7; }
+  .carousel-container img:nth-child(8) { z-index: 8; }
+  .carousel-container img:nth-child(9) { z-index: 9; }
+}
+
+
