@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bottom Right Flower Float</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      position: relative;
+      min-height: 90vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 40px 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .text {
+      max-width: 600px;
+    }
+
+    .image-wrapper {
+        position: absolute;
+        bottom: 0;
+        width: 45vw;
+        height: auto;
+        overflow: hidden;
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    .image-wrapper img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+
+    .name-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        min-height: 90vh;
+        flex-direction: row;
+    }
+
+    .name-wrapper img{
+        height: 20rem;
+    }
+
+    .flowers{
+        display: flex;
+        justify-content: center; /* centers the images horizontally */
+        align-items: center;     /* centers them vertically if needed */
+        gap: 2vw;               /* space between images */
+        height: 20vh;  
+    }
+
+    .hibiscus1 {
+        height: 90vh;
+        position: absolute;
+        left: 0;
+        margin-left: -400px;
+    }
+
+    @media (max-width: 768px) {
+      .image-wrapper {
+        width: 150px;
+        bottom: 10px;
+        right: -6vw;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="name-wrapper">
+        <img src="assets/img/lyzza.png" alt="Lyzza">
+        <img src="assets/img/abig.png" alt="Abig">
+    </div>
+    <div class="flowers">
+        <img class="hibiscus1" src="assets/img/hibiscus1.png" alt="Hibiscus Image">
+    </div>
+  <div class="image-wrapper">
+    <img src="assets/img/hibiscus2.png" alt="Hibiscus Flower" />
+  </div>
+</body>
+</html>

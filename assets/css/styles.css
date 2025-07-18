@@ -1,19 +1,33 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html{
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   font-family: sans-serif;
   background-color: #0000;
-  overflow-x: hidden;
   position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: pink;
+  border-radius: 999px;
 }
 
 :root{
@@ -93,14 +107,16 @@ body {
 
 .img-wrapper {
   display: flex;
-  justify-content: center; /* centers the images horizontally */
-  align-items: center;     /* centers them vertically if needed */
-  gap: 2vw;               /* space between images */
-  height: 90vh;           /* optional: center vertically in viewport */
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  min-height: 90vh;
+  padding: 5rem;
+  flex-direction: row;
 }
 
 .img-wrapper img{
-  height: 300px;
+  height: 20rem;
 }
 
 .flowers{
@@ -108,7 +124,6 @@ body {
   justify-content: center; /* centers the images horizontally */
   align-items: center;     /* centers them vertically if needed */
   gap: 2vw;               /* space between images */
-  height: 20vh;  
 }
 
 .hibiscus1 {
@@ -122,19 +137,25 @@ body {
   height: 80vh;
   position: absolute;
   right: 0;
-  margin-top: -10%;
-  margin-right: -400px;
+  margin-top: -25%;
 }
 
 .wave1 {
   max-width: 100%;
-  margin-top: -10%;
+  height: auto;
+  margin-top: -5%;
 }
 
 /*======================== about ========================*/
 .section2{
   min-height: 100vh;
   background-color: var(--red);
+}
+
+.ab {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
 }
 
 .about {
@@ -157,8 +178,12 @@ body {
   align-items: center;  
 }
 
+.myPic {
+  margin: 0;
+  padding: 0;
+}
+
 .lyzzasPic img{
-  margin-top: -13%;
   height: 900px;
 }
 
@@ -198,20 +223,22 @@ p.indent1 {
   position: absolute;
   margin-top: -35rem;
   right: 0;
-  margin-right: -210px;
 }
 
 .educ {
-  margin-top: -25rem;
+  margin-top: -14rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .education-wrapper {
   display: flex;
-  margin-left: 10rem;
+  margin: 0;
 }
 
 .education-wrapper img{
   height: 200px;
+  padding-left: 9rem;
 }
 
 .educTxt {
@@ -244,7 +271,7 @@ p.indent1 {
 
 .cv-wrapper {
   float: right;
-  height: 250px;
+  height: 20rem;
   transition: transform 0.3s ease;
 }
 
@@ -252,34 +279,38 @@ p.indent1 {
   transform: scale(1.05);
 }
 
+.wave3 {
+  max-width: 100%;
+  margin-top: -23rem;
+}
+
+/*======================== transition ========================*/
+.transition {
+  min-height: 10vh;
+  background-color: var(--red);
+}
+
+.port-wrapper {
+  padding-left: 45rem;
+}
+
+.port-wrapper img{
+  height: 250px;
+}
 
 /*======================== portfolio ========================*/
 .section4 {
   min-height: 200vh;
   background-color: var(--red);
-}
-
-.wave3 {
-  max-width: 100%;
-  margin-top: -15rem;
+  overflow-x: hidden;
 }
 
 .hibiscus3 {
-  height: 100vh;
+  height: 90vh;
   position: absolute;
   left: 0;
   margin-left: -16rem;
   margin-top: -50rem;
-}
-
-.port-wrapper {
-  display: flex;
-  margin-left: 45rem;
-  margin-top: -20rem;
-}
-
-.port-wrapper img{
-  height: 250px;
 }
 
 .carousel {
@@ -297,6 +328,7 @@ p.indent1 {
   transform: rotate(4deg); /* ⬅️ This tilts the whole grid */
   transform-origin: center;
   min-width:110vw; 
+  overflow-x: hidden;
 }
 
 
@@ -382,7 +414,6 @@ button {
   height: 120vh;
   position: absolute;
   right: 0;
-  margin-right: -600px;
   margin-top: 28rem;
 }
 
@@ -393,13 +424,9 @@ button {
   margin-top: 5rem;
 }
 
-.seeMore-wrapper img{
-  height: 85px;
-}
-
 .seeMore-link .seeMore-img {
   transition: transform 0.3s ease;
-  height: 85px;
+  height: 15rem;
 }
 
 .seeMore-link:hover .seeMore-img {
@@ -425,7 +452,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   margin-top: -15rem;
-  margin-left: 10rem;
+  margin-left: 5rem;
 }
 
 .con-wrapper {
@@ -483,45 +510,3 @@ button {
 .ft i:hover{
   color: #301623;
 }
-
-
-/*======================== media ========================*/
-@media screen and (min-width: 768px) {
-  .btns {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .carousel{
-    max-width: 90vw;
-  }
-  .carousel-container {
-    padding-top: 350px;
-    position: relative;
-    width: 100%;
-    height: auto;
-    transform: rotate(0deg); 
-  }
-
-  .carousel-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transform: rotate(var(--angle));
-    transition: transform 0.3s ease;
-    z-index: 1;
-  }
-
-  .carousel-container img:nth-child(2) { z-index: 2; }
-  .carousel-container img:nth-child(3) { z-index: 3; }
-  .carousel-container img:nth-child(4) { z-index: 4; }
-  .carousel-container img:nth-child(5) { z-index: 5; }
-  .carousel-container img:nth-child(6) { z-index: 6; }
-  .carousel-container img:nth-child(7) { z-index: 7; }
-  .carousel-container img:nth-child(8) { z-index: 8; }
-  .carousel-container img:nth-child(9) { z-index: 9; }
-}
-
-
