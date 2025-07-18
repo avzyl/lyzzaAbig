@@ -84,7 +84,7 @@
     }
 
     .lyzzasPic img {
-        height: 25rem;
+        height: 24rem;
         padding-top: 2rem;
         margin-left: 0rem;
     }
@@ -110,7 +110,7 @@
     }
 
     .section3 {
-        min-height: 110vh;
+        min-height: 85vh;
     }
 
     .education-wrapper {
@@ -120,8 +120,8 @@
     }
 
     .education-wrapper img {
-        padding-top: 5rem;
-        height: 9rem;
+        padding-top: 4rem;
+        height: 8rem;
         padding-left: 0rem;
     }
 
@@ -147,6 +147,7 @@
     .cv-con {
         padding-top: 1rem;     
         padding-right: 2rem;
+        margin-bottom: 4rem;
     }
 
     .cv-wrapper {
@@ -158,7 +159,7 @@
     .rose {
         margin-right: 0;
         margin-top: 4rem;
-        height: 75vh;
+        height: 50vh;
     }
 
     .wave3 {
@@ -234,15 +235,18 @@
 
     .con-container {
         margin-top: -10rem;
-        margin-left: 0.5rem;
+        margin-left: 1rem;
         width: 80%;
     }
 
     .con-wrapper {
-        flex: 0 1 25%;
+        flex: 0 1 100%;
     }
 
-    /* Force tgt to take full width and center it */
+    .con-wrapper:nth-child(2) {
+        flex: 0 1 100%;
+    }
+
     .con-wrapper:nth-child(3) {
         flex: 0 1 100%;
     }
@@ -383,7 +387,7 @@
     }
 
     .section3 {
-        min-height: 120vh;
+        min-height: 80vh;
     }
 
     .education-wrapper {
@@ -420,6 +424,7 @@
     .cv-con {
         padding-top: 1rem;     
         padding-right: 4rem;
+        margin-bottom: 5rem;
     }
 
     .cv-wrapper {
@@ -451,8 +456,8 @@
 
     .hibiscus3 {
         height: 40vh;
-        margin-left: -15rem;
-        margin-top: -20rem;
+        margin-left: -10rem;
+        margin-top: -30rem;
     }
 
     .flowers {
@@ -481,7 +486,7 @@
     .rose1 {
         height: 35vh;
         margin-left: -8rem;
-        margin-top: -15rem;
+        margin-top: -10rem;
     }
 
     .tulips {
@@ -507,15 +512,18 @@
 
     .con-container {
         margin-top: -10rem;
-        margin-left: 0.5rem;
-        width: 90%;
+        margin-left: 1rem;
+        width: 80%;
     }
 
     .con-wrapper {
-        flex: 0 1 25%;
+        flex: 0 1 100%;
+    }
+    
+    .con-wrapper:nth-child(2) {
+        flex: 0 1 100%;
     }
 
-    /* Force tgt to take full width and center it */
     .con-wrapper:nth-child(3) {
         flex: 0 1 100%;
     }
@@ -537,19 +545,17 @@
     }
 
     .ft i{
-        font-size: 100%;
+        font-size: 140%;
     }
 
     .wave5 {    
-        width: 110%;
+        width: 100%;
         margin-top: -5rem;
     }
-
-
 }
 
 /* Tablet styles */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .btns {
         display: none;
     }
@@ -586,13 +592,18 @@
 
     /* ================ secrion 2 ========= */
     .ab {
-        flex-direction: column; /* Stack vertically */
-        align-items: center;    /* Optional: center items horizontally */
+        flex-direction: column;
+        align-items: center;
         margin: 0;
     }
     
     .about-wrapper {
         padding: 0;
+        margin-top: 8rem;
+    }
+
+    .aboutPic {
+        margin-left: -5rem;
     }
     
     .about-wrapper img {
@@ -618,6 +629,10 @@
         text-align: justify;
     }
 
+    .section3 {
+        min-height: 100vh;
+    }
+
     .education-wrapper {
         margin: 0;
         padding: 0;
@@ -640,10 +655,12 @@
 
     .cv-con {
         padding-top: 1rem;
+        padding-right: 4rem;
     }
 
     .cv-wrapper {
         height: 10rem;
+        margin-bottom: 8rem;
     }
 
     .rose {
@@ -664,13 +681,13 @@
 
     /* ================ section 4 ========= */
     .section4 {
-        min-height: 120vh;
+        min-height: 90vh;
     }
 
     .hibiscus3 {
         height: 45vh;
-        margin-left: -15rem;
-        margin-top: -30rem;
+        margin-left: -20rem;
+        margin-top: -35rem;
     }
 
     .flowers {
@@ -679,7 +696,7 @@
 
     .port-wrapper {
         margin: 0;
-        margin-top: -14rem;
+        margin-top: -12rem;
         display: absolute;
         align-items: center;
         justify-content: right;
@@ -693,11 +710,12 @@
 
     .seeMore-link .seeMore-img {
         height: 5rem;
+        z-index: 1;
     }
 
     .rose1 {
         height: 45vh;
-        margin-left: -8rem;
+        margin-left: -15rem;
         margin-top: -5rem;
     }
 
@@ -719,19 +737,23 @@
 
     .con-wrapper img{
         margin-top: 5rem;
-        height: 5.8rem;
+        height: 7rem;
     }
 
     .con-container {
         margin-top: -10rem;
-        margin-left: 1.5rem;
+        margin-left: 1rem;
+        width: 80%;
     }
 
     .con-wrapper {
         flex: 0 1 25%;
     }
 
-    /* Force tgt to take full width and center it */
+    .con-wrapper:nth-child(2) {
+        flex: 0 1 100%;
+    }
+
     .con-wrapper:nth-child(3) {
         flex: 0 1 100%;
     }

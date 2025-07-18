@@ -172,6 +172,10 @@ body::-webkit-scrollbar-thumb {
   height: 210px;
 }
 
+.aboutPic {
+  margin-left: 0;
+}
+
 .me{
   display: flex;
   justify-content: center; /* centers the images horizontally */
@@ -357,6 +361,7 @@ button {
   align-items: center;
   flex-direction: column;
   z-index: 1000;
+  padding: 1rem;
 }
 
 .popup.hidden {
