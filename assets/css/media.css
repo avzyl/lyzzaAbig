@@ -1211,3 +1211,431 @@
         margin-top: -10rem;
     }
 }
+
+/* tab with xtra height */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) and (min-height: 1000px){
+    .btns {
+        display: none;
+    }
+
+    .section1{
+        min-height: 50vh;
+    }
+
+    .img-wrapper {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .img-wrapper img {
+        height: 17rem;
+    }
+
+    .hibiscus1 {
+        height: 55vh;
+        margin-left: -20rem;
+    }
+
+    .hibiscus2 {
+        margin-right: 0;
+        height: 55vh;
+        z-index: 2;
+        margin-top: -30rem;
+    }
+    
+    .wave1 {
+        z-index: 1;
+    }
+
+    /* ================ secrion 2 ========= */
+    .ab {
+        margin-left: 1rem;
+    }
+    
+    .about-wrapper {
+        padding: 0;
+        margin-top: 15rem;
+    }
+
+    .about-wrapper img {
+        height: 8rem;
+    }
+
+    .lyzzasPic img {
+        height: 35rem;
+        padding-top: 5rem;
+    }
+
+    .aboutPic {
+        position: absolute;
+        z-index: 3;
+    }
+
+    .me {
+        margin-top: 10rem;
+    }
+
+    .aboutTxt {
+        text-align: justify;
+    }
+
+    /* ================ secrion 3 ========= */
+
+    .section3 {
+        min-height: 70vh;
+    }
+
+    .education-wrapper {
+        margin: 0;
+        margin-top: 3rem;
+        padding: 0;
+    }
+
+    .education-wrapper img {
+        padding-top: 5rem;
+        height: 13rem;
+        padding-left: 2rem;
+    }
+
+    .educ {
+        margin-right: 0;
+    }
+    
+    .educTxt {
+        margin-left: 0rem;
+        margin-top: 3rem;
+    }
+
+    .cv-con {
+        padding-top: 1rem;
+        padding-right: 4rem;
+    }
+
+    .cv-wrapper {
+        height: 13rem;
+        margin-bottom: 8rem;
+    }
+
+    .rose {
+        margin-right: 0;
+        margin-top: -10rem;
+        height: 70vh;
+    }
+
+    .wave3 {
+        margin-top: -9rem;
+    }
+
+    /*======================== transition ========================*/
+    .transition {
+        min-height: 5vh;
+        background-color: var(--red);
+    }
+
+    /* ================ section 4 ========= */
+    .section4 {
+        min-height: 80vh;
+    }
+
+    .hibiscus3 {
+        height: 45vh;
+        margin-left: -25rem;
+        margin-top: -40rem;
+    }
+
+    .flowers {
+        gap: 0;
+    }
+
+    .port-wrapper {
+        margin: 0;
+        margin-top: -12rem;
+        display: absolute;
+        align-items: center;
+        justify-content: right;
+        padding-left: 10rem;
+        padding-top: 10rem;
+    }
+
+    .port-wrapper img {
+        height: 17vw;
+    }
+
+    .seeMore-link .seeMore-img {
+        height: 5rem;
+        z-index: 1;
+    }
+
+    .rose1 {
+        height: 40vh;
+        margin-left: -15rem;
+        margin-top: -5rem;
+    }
+
+    .tulips {
+        margin-top: 38rem;
+        height: 70vh;
+        margin-right: 0;
+    }
+
+    /* ================ section 5 ========= */
+    .section5 {
+        min-height: 30vh;
+    }
+
+    .wave4 {
+        margin-top: -9rem;
+        max-width: 100%;
+    }
+
+    .con-wrapper img{
+        margin-top: 5rem;
+        height: 10rem;
+    }
+
+    .con-container {
+        margin-top: -15rem;
+        margin-left: 1rem;
+        width: 80%;
+    }
+
+    .con-wrapper {
+        flex: 0 1 25%;
+    }
+
+    .con-wrapper:nth-child(2) {
+        flex: 0 1 100%;
+    }
+
+    .con-wrapper:nth-child(3) {
+        flex: 0 1 100%;
+    }
+
+    .deets-con {
+        margin-top: 3rem;
+    }
+
+    .con-deets img,
+    .email {
+        height: 5rem;
+    }
+
+    .ft{
+        padding-top: 1.5rem;
+    }
+
+    .ft i{
+        font-size: 200%;
+    }
+
+    .wave5 {    
+        margin-top: -10rem;
+    }
+}
+
+/* xtra-large devices */
+@media only screen and (min-width: 1201px) and (max-width: 1440px){
+    .btns {
+        display: none;
+    }
+
+    .section1{
+        min-height: 50vh;
+    }
+
+    .img-wrapper {
+        padding: 0;
+    }
+
+    .img-wrapper img {
+        height: 13rem;
+    }
+    
+    .wave1 {
+        z-index: 1;
+    }
+
+    /* ================ secrion 2 ========= */
+    .ab {
+        margin-left: 1rem;
+    }
+    
+    .about-wrapper {
+        padding: 0;
+        margin-top: 8rem;
+    }
+
+    .about-wrapper img {
+        height: 10rem;
+    }
+
+    .lyzzasPic img {
+        height: 42rem;
+        padding-top: 5rem;
+    }
+
+    .aboutPic {
+        position: absolute;
+        z-index: 3;
+    }
+
+    .me {
+        margin-top: 10rem;
+    }
+
+    .aboutTxt {
+        text-align: justify;
+    }
+
+    /* ================ secrion 3 ========= */
+
+    .section3 {
+        min-height: 100vh;
+    }
+
+    .education-wrapper {
+        margin: 0;
+        padding: 0;
+    }
+
+    .education-wrapper img {
+        padding-top: 5rem;
+        height: 13rem;
+        padding-left: 2rem;
+    }
+
+    .educ {
+        margin-right: 0;
+    }
+    
+    .educTxt {
+        margin-left: 0rem;
+        margin-top: 3rem;
+    }
+
+    .cv-con {
+        padding-top: 1rem;
+        padding-right: 4rem;
+    }
+
+    .cv-wrapper {
+        height: 13rem;
+        margin-bottom: 8rem;
+    }
+
+    .rose {
+        margin-right: 0;
+        margin-top: -10rem;
+        height: 100vh;
+    }
+
+    .wave3 {
+        margin-top: -9rem;
+    }
+
+    /*======================== transition ========================*/
+    .transition {
+        min-height: 5vh;
+        background-color: var(--red);
+    }
+
+    /* ================ section 4 ========= */
+    .section4 {
+        min-height: 180vh;
+    }
+
+    .hibiscus3 {
+        height: 65vh;
+        margin-left: -15rem;
+        margin-top: -40rem;
+    }
+
+    .flowers {
+        gap: 0;
+    }
+
+    .port-wrapper {
+        margin: 0;
+        margin-top: -12rem;
+        display: absolute;
+        align-items: center;
+        justify-content: right;
+        padding-left: 4rem;
+        padding-top: 10rem;
+    }
+
+    .port-wrapper img {
+        height: 19vw;
+    }
+
+    .seeMore-link .seeMore-img {
+        height: 5rem;
+        z-index: 1;
+    }
+
+    .rose1 {
+        height: 70vh;
+        margin-left: -10rem;
+        margin-top: -5rem;
+    }
+
+    .tulips {
+        margin-top: 38rem;
+        height: 150vh;
+        margin-right: 0;
+    }
+
+    /* ================ section 5 ========= */
+    .section5 {
+        min-height: 30vh;
+    }
+
+    .wave4 {
+        margin-top: -12rem;
+        max-width: 100%;
+    }
+
+    .con-wrapper img{
+        margin-top: 5rem;
+        height: 10rem;
+    }
+
+    .con-container {
+        margin-top: -15rem;
+        margin-left: 1rem;
+        width: 80%;
+    }
+
+    .con-wrapper {
+        flex: 0 1 25%;
+    }
+
+    .con-wrapper:nth-child(2) {
+        flex: 0 1 100%;
+    }
+
+    .con-wrapper:nth-child(3) {
+        flex: 0 1 100%;
+    }
+
+    .deets-con {
+        margin-top: 3rem;
+    }
+
+    .con-deets img,
+    .email {
+        height: 5rem;
+    }
+
+    .ft{
+        padding-top: 1.5rem;
+    }
+
+    .ft i{
+        font-size: 200%;
+    }
+
+    .wave5 {    
+        margin-top: -10rem;
+    }
+}
