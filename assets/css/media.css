@@ -173,7 +173,7 @@
 
     /* ================ section 4 ========= */
     .section4 {
-        min-height: 80vh;
+        min-height: 75vh;
     }
 
     .hibiscus3 {
@@ -203,6 +203,7 @@
     .seeMore-link .seeMore-img {
         margin-top: -3rem;
         height: 3rem;
+        margin-left: 5rem;
     }
 
     .rose1 {
@@ -213,13 +214,13 @@
 
     .tulips {
         margin-top: 20rem;
-        height: 55vh;
+        height: 50vh;
         margin-right: 0;
     }
 
     /* ================ section 5 ========= */
     .section5 {
-        min-height: 55vh;
+        min-height: 50vh;
     }
 
     .wave4 {
@@ -228,12 +229,12 @@
     }
 
     .con-wrapper img{
-        margin-top: 5rem;
+        margin-top: 3rem;
         height: 3.5rem;
     }
 
     .con-container {
-        margin-top: -10rem;
+        margin-top: -5rem;
         margin-left: 1rem;
         width: 80%;
     }
@@ -557,6 +558,289 @@
     .wave5 {    
         width: 110%;
         margin-top: -10rem;
+    }
+
+    footer {
+        min-height: 8vh;
+    }
+}
+
+/* max-height 700 */
+@media only screen and (max-width: 480px) and (min-height: 751px){
+    .carousel{
+        max-width: 90vw;
+        padding-left: 4rem;
+    }
+    .carousel-container {
+        padding-top: 290px;
+        width: 90%;
+        transform: rotate(0deg); 
+        margin-right: 0;              
+        overflow-x: hidden;
+    }
+
+    .carousel-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 85%;
+        transform: rotate(var(--angle));
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .carousel-container img:nth-child(2) { z-index: 2; }
+    .carousel-container img:nth-child(3) { z-index: 3; }
+    .carousel-container img:nth-child(4) { z-index: 4; }
+    .carousel-container img:nth-child(5) { z-index: 5; }
+    .carousel-container img:nth-child(6) { z-index: 6; }
+    .carousel-container img:nth-child(7) { z-index: 7; }
+    .carousel-container img:nth-child(8) { z-index: 8; }
+    .carousel-container img:nth-child(9) { z-index: 9; }
+
+    .button {
+        margin-top: -10rem;
+        z-index: 1;
+    }
+
+    .section1{
+        min-height: 40vh;
+    }
+
+    .img-wrapper {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .img-wrapper img {
+        height: 7rem;
+    }
+
+    .hibiscus1 {
+        height: 40vh;
+        margin-left: -8rem;
+    }
+
+    .hibiscus2 {
+        margin-top: -10rem;
+        height: 40vh;
+        z-index: 2;
+    }
+    
+    .wave1 {
+        margin-top: -2rem;
+        z-index: 1;
+    }
+
+    /* ================ secrion 2 ========= */
+    .ab {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .about-wrapper {
+        padding: 0;
+        margin-top: 8rem;
+    }
+    
+    .about-wrapper img {
+        padding-left: 2vw;
+        height: 6rem;
+    }
+
+    .lyzzasPic img {
+        height: 24rem;
+        padding-top: 2rem;
+        margin-left: 0rem;
+    }
+
+    .aboutPic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .me {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutTxt {
+        text-align: justify;
+        margin: 1.5rem;
+    }
+
+    l.aboutTxt p {
+        font-size: 1rem;
+    }
+
+    .section3 {
+        min-height: 85vh;
+    }
+
+    .education-wrapper {
+        margin: 0;
+        padding: 0;
+        margin-top: 10rem;
+    }
+
+    .education-wrapper img {
+        padding-top: 4rem;
+        height: 8rem;
+        padding-left: 0rem;
+    }
+
+    .educ {
+        margin-right: 0;
+    }
+    
+    .educTxt {
+        margin-left: 0rem;
+        margin-top: 3rem;
+    }
+
+    .educTxt p {
+        color: var(--red);
+        font-size: 1rem;
+    }
+
+    .school,
+    .schoolLast {
+        width: 90%;
+    }
+
+    .cv-con {
+        padding-top: 1rem;     
+        padding-right: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .cv-wrapper {
+        height: 6rem;        
+        float: right; 
+
+    }
+
+    .rose {
+        margin-right: 0;
+        margin-top: 4rem;
+        height: 50vh;
+    }
+
+    .wave3 {
+        margin-top: -3rem;
+    }
+
+    /*======================== transition ========================*/
+    .transition {
+        min-height: 5vh;
+        background-color: var(--red);
+    }
+
+    /* ================ section 4 ========= */
+    .section4 {
+        min-height: 75vh;
+    }
+
+    .hibiscus3 {
+        height: 35vh;
+        margin-left: -14rem;
+        margin-top: -25rem;
+    }
+
+    .flowers {
+        gap: 0;
+    }
+
+    .port-wrapper {
+        margin: 0;
+        margin-top: -5rem;
+        display: absolute;
+        align-items: center;
+        justify-content: right;
+        padding-left: 2rem;
+        padding-top: 5rem;
+    }
+
+    .port-wrapper img {
+        height: 19vw;
+    }
+
+    .seeMore-link .seeMore-img {
+        margin-top: -3rem;
+        height: 3rem;
+    }
+
+    .rose1 {
+        height: 35vh;
+        margin-left: -10rem;
+        margin-top: -15rem;
+    }
+
+    .tulips {
+        margin-top: 25rem;
+        height: 55vh;
+        margin-right: 0;
+    }
+
+    /* ================ section 5 ========= */
+    .section5 {
+        min-height: 50vh;
+    }
+
+    .wave4 {
+        margin-top: -7rem;
+        max-width: 100%;
+    }
+
+    .con-wrapper img{
+        margin-top: 5rem;
+        height: 3.5rem;
+    }
+
+    .con-container {
+        margin-top: -10rem;
+        margin-left: 0.5rem;
+        width: 80%;
+    }
+
+    .con-wrapper {
+        flex: 0 1 100%;
+    }
+
+    .con-wrapper:nth-child(2) {
+        flex: 0 1 100%;
+    }
+
+    .con-wrapper:nth-child(3) {
+        flex: 0 1 100%;
+    }
+
+    .deets-con {
+        margin-top: 4rem;
+    }
+
+    .con-deets img,
+    .email {
+        height: 2rem;
+    }
+
+    .ft-wrapper {
+        padding-top: 6rem;
+    }
+
+    .ft{
+        font-size: 0.7rem;
+    }
+
+    .ft i{
+        font-size: 160%;
+    }
+
+    .wave5 {    
+        width: 110%;
+        margin-top: -12rem;
     }
 
     footer {
