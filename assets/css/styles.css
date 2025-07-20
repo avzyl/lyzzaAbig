@@ -465,7 +465,7 @@ button {
 
 /*======================== contact ========================*/
 .section5 {
-  min-height: 90vh;
+  min-height: 130vh;
   background-color: var(--beige);
 }
 
@@ -496,7 +496,7 @@ button {
 
 .wave5 {
   max-width: 100%;
-  margin-top: -16rem;
+  margin-top: -50rem;
 }
 
 .deets-con {
@@ -539,4 +539,10 @@ button {
 
 .ft i:hover{
   color: #301623;
+}
+
+
+footer {
+  min-height: 5vh;
+  background-color: var(--red);
 }
