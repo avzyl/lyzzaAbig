@@ -13,7 +13,6 @@ html{
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #0000;
   position: relative;
 }
 
@@ -116,7 +115,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .img-wrapper img{
-  height: 20rem;
+  height: 19rem;
 }
 
 .flowers{
@@ -457,6 +456,7 @@ button {
 .seeMore-link .seeMore-img {
   transition: transform 0.3s ease;
   height: 15rem;
+  margin-left: 0rem;
 }
 
 .seeMore-link:hover .seeMore-img {
@@ -545,4 +545,73 @@ button {
 footer {
   min-height: 5vh;
   background-color: var(--red);
+}
+
+
+/* section 1.1 - portfolio */
+
+/*======================== portfolio ========================*/
+.section11 {
+  min-height: 70vh;
+  background-color: var(--red);
+}
+
+.hibiscus31 {
+  height: 90vh;
+  position: absolute;
+  left: 0;
+  margin-left: -16rem;
+}
+
+.port-wrapper11 {
+  padding-top: 5rem;
+}
+
+.port-wrapper11 {
+  padding-left: 45rem;
+}
+
+.port-wrapper11 img{
+  height: 250px;
+}
+
+.wave12 {
+  max-width: 100%;
+  margin-top: -2rem;
+}
+
+.section12 {
+  min-height: 100vh;
+  background-color: var(--beige);
+}
+
+.folders {
+  margin-top: 5rem;
+}
+
+/* image swap */
+.image-swap {
+  position: relative;
+  display: block;
+}
+
+.hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.section12 {
+  min-height: 150vh;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-swap img {
+  aspect-ratio: 1 / 1; /* Forces square shape */
+  object-fit: cover;   /* Crops to fit nicely */
 }
