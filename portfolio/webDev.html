@@ -15,6 +15,7 @@
 
         <!-- Fontawesome -->
         <script src="https://use.fontawesome.com/e5218896e0.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
 
         <!-- On-scrollreveal -->
         <script src="https://unpkg.com/scrollreveal"></script>
@@ -66,8 +67,75 @@
         </section>
         
         <section class="webDevInfo">
+            <div class="section__title">
+                <h1>Web Development</h1>
+            </div>
+
             <div class="section__container about__container">
-                <div class="about__image about__image-1" id="jpcsAdmin">
+
+                <!-- aquapath -->
+                <div class="about__image about__image-1" id="aquapath">
+                    <div id="aquapathCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+
+                        <!-- 🟢 Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#aquapathCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#aquapathCarousel" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#aquapathCarousel" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#aquapathCarousel" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#aquapathCarousel" data-bs-slide-to="4" class="active" aria-current="true" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#aquapathCarousel" data-bs-slide-to="5" class="active" aria-current="true" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#aquapathCarousel" data-bs-slide-to="7" class="active" aria-current="true" aria-label="Slide 7"></button>
+                        </div>
+            
+                        <!-- 🎞 Slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../assets/img/portfolio/apIndex.png" class="preview d-block w-100" alt="Slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/portfolio/apFloat.png" class="preview d-block w-100" alt="Slide 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/portfolio/apSearch.png" class="preview d-block w-100" alt="Slide 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/portfolio/apCEU.png" class="preview d-block w-100" alt="Slide 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/portfolio/apSearchEng.png" class="preview d-block w-100" alt="Slide 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/portfolio/apWarning.png" class="preview d-block w-100" alt="Slide 6">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/portfolio/apRoute.png" class="preview d-block w-100" alt="Slide 7">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="about__content about__content-1">
+                    <h3 class="section__subheader">2024</h3>
+                    <h2 class="section__header">Aquapath</h2>
+                    <p>
+                        Developed as a collaborative final project during the creator’s third year in college, this flood monitoring application connects a physical sensor to a centralized database, allowing real-time data to be transmitted and displayed within the app for users to track flood status. As a full-stack developer and product lead, the creator was responsible for both the app’s functionality and its end-to-end development—ensuring seamless integration from hardware to user interface.
+                    </p>
+                    <div class="about__btn">
+                        <a href="https://bsitport2026.com/Aquapath/" target="_blank">
+                        Visit Site
+                        <span><i class="ri-arrow-right-line"></i></span>
+                        </a>
+                    </div>
+                    <div>
+                        <p style="color: #e9c675; margin-top: 1rem;">
+                        Tags: HTML, CSS, JavaScript, C++, Leaflet.js, MySQL, ESP8266, JSN-SR04T, Arduino
+                        </p>
+                    </div>
+                </div>
+
+                <!-- jpcs admin -->
+                <div class="about__image about__image-2" id="jpcsAdmin">
                     <div id="jpcsAdminCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
 
                         <!-- 🟢 Indicators -->
@@ -92,7 +160,7 @@
                         
                     </div>
                 </div>
-                <div class="about__content about__content-1">
+                <div class="about__content about__content-2">
                     <h3 class="section__subheader">2024</h3>
                     <h2 class="section__header">JPCS Admin Dashboard</h2>
                     <p>
@@ -105,7 +173,7 @@
                     </div>
                 </div>
 
-                <div class="about__image about__image-2" id="blog">
+                <div class="about__image about__image-3" id="blog">
                     <div id="jpcsMemCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
 
                         <!-- 🟢 Indicators -->
@@ -130,7 +198,7 @@
                         
                     </div>
                 </div>
-                <div class="about__content about__content-2">
+                <div class="about__content about__content-3">
                     <h3 class="section__subheader">2024</h3>
                     <h2 class="section__header">JPCS Membership</h2>
                     <p>
@@ -151,7 +219,7 @@
 
                 
                 <!-- escoventory -->
-                <div class="about__image about__image-3" id="escoventory">
+                <div class="about__image about__image-4" id="escoventory">
                     <div id="escoventoryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
 
                         <!-- 🟢 Indicators -->
@@ -184,7 +252,7 @@
                         
                     </div>
                 </div>
-                <div class="about__content about__content-3">
+                <div class="about__content about__content-4">
                     <h3 class="section__subheader">2022</h3>
                     <h2 class="section__header">Escoventory</h2>
                     <p>
@@ -204,7 +272,7 @@
                 </div>
 
                 <!-- CMU -->
-                <div class="about__image about__image-4" id="CMURS">
+                <div class="about__image about__image-5" id="CMURS">
                     <div id="CMURSCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
 
                         <!-- 🟢 Indicators -->
@@ -233,7 +301,7 @@
                         
                     </div>
                 </div>
-                <div class="about__content about__content-4">
+                <div class="about__content about__content-5">
                     <h3 class="section__subheader">2022</h3>
                     <h2 class="section__header">CMU Record System</h2>
                     <p>
@@ -253,7 +321,7 @@
                 </div>
 
                 <!-- Avesta -->
-                <div class="about__image about__image-5" id="Avesta">
+                <div class="about__image about__image-6" id="Avesta">
                     <div id="AvestaCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
 
                         <!-- 🟢 Indicators -->
@@ -282,7 +350,7 @@
                         
                     </div>
                 </div>
-                <div class="about__content about__content-5">
+                <div class="about__content about__content-6">
                     <h3 class="section__subheader">2022</h3>
                     <h2 class="section__header">Avesta</h2>
                     <p>
