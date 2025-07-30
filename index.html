@@ -11,6 +11,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/media.css">
+        <link rel="stylesheet" href="assets/css/loader.css">
 
         <!-- Fontawesome -->
         <script src="https://use.fontawesome.com/e5218896e0.js"></script>
@@ -23,6 +24,22 @@
     </head>
 
     <body>
+        <!-- From Uiverse.io by tako143 --> 
+        <div id="preloader">
+            <div class="flower">
+                <div class="petal petal1"></div>
+                <div class="petal petal2"></div>
+                <div class="petal petal3"></div>
+                <div class="petal petal4"></div>
+                <div class="petal petal5"></div>
+                <div class="petal petal6"></div>
+                <div class="petal petal7"></div>
+                <div class="petal petal8"></div>
+                <div class="center"></div>
+            </div>
+        </div>
+
+
         <header>
             <!-- Navigation Bar -->
             <nav class="navbar fixed-top">
@@ -248,6 +265,14 @@
                 </p>
             </div>
         </footer>
+
+        <script>
+            window.addEventListener("load", function () {
+                setTimeout(() => {
+                document.getElementById("preloader").style.display = "none";
+                });
+            });
+        </script>
 
 
         <!-- Scroll Reveal -->
